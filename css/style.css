@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    position: sticky;
+}
+
+header::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.30;
+}
+
+#logo{
+    margin: 0px 11px;
+}
+
+#logo img{
+    height: 53px;
+    margin: 0px 8px; 
+}
+
+nav{
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    margin: auto;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 2px 8px;
+    font-size: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    font-size: 1.3rem;
+    color: red;
+    transition: ease-in-out;
+    font-weight: bolder;
+    color: black;
+}
+
+.search{
+    position: relative;
+    left: 610px;
+}
+
+.search input{
+    padding: 5px;
+    margin: 9px 4px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    width: 15vw;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(../background_img/home1.jpg) no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 51vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.82;
+}
+
+.button-btn{
+    position: relative;
+    left: 610px;
+}
+
+.button-btn button{
+    padding: 5px;
+    margin: 9px 0px;
+    font-size: 1.1rem;
+    border: none;
+   
+}
+
+#searchbtn{
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+}
+
+#searchbtn:hover{
+    color: green;
+    background-color: white;
+    border: 2px solid green;
+    cursor: pointer;
+}
+
+#signinbtn{
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+}
+
+#signinbtn:hover{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    /* transition: 1s step-end; */
+    cursor: pointer;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1{
+    color: red;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+#home p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: yellow;
+}
+
+#about h1{
+    text-align: center;
+    color: black;
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+
+#about p{
+    font-size: 20px;
+}
+
+.about .box{
+    display: flex;
+}
+
+.about .box img{
+    border: 3px solid rgb(229, 234, 229);
+    display: block;
+    height: 275px;
+    margin: 4px 15px;
+    border-radius: 6px;
+}
+
+.about .box p{
+    text-align: start;
+    padding: 7px 18px;
+    font-size: 1.2ren;
+    margin: 2px 20px;
+}
+
+.about .box p button{
+    font-size: 0.8rem;
+    border-radius: 7px;
+    padding: 3px 8px;
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+}
+
+.about .box p button:hover{
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+}
+
+.h-head{
+    font-size: 2.1rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Gallary Book Photos */
+.gallary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.title p{
+    font-size: 1.1rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.gallary .item{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+
+.gallary .item img{
+    width: 100%;
+    height: 100%;
+}
+
+.gallary .item .action{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.gallary .item .action:hover{
+    opacity: 1;
+
+}
+
+.gallary .item .action a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+}
+
+/* Books CSS */
+.book{
+    max-width: 75vw;
+    margin:37px auto;
+}
+
+.my-1{
+    margin: 5px 0;
+}
+
+.my-2{
+    margin: 26px 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.books{
+    display: flex;
+    overflow: hidden;
+}
+
+.book-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.book-item img{
+    height: 200px;
+    width: 133px;
+}
+
+.book .btn-b{
+   font-size: 16px;
+   color: #fff;
+   background-color: #0376B8;
+   width: 100%;
+   display: block;
+   border: 0;
+   border-radius: 5px;
+   margin-top: 5px;
+   box-sizing: border-box;
+   cursor: pointer;
+   text-align: center;
+   padding: 7px;
+   white-space: nowrap;
+   line-height: 1.5em;
+   text-decoration: none;
+   transition: background-color .2s;
+}
+
+.book .btn-b:hover{
+   /* background-color: white;
+   color: rgb(117, 117, 227);
+   border: 2px solid rgb(117, 117, 227);
+   cursor: pointer;
+   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+   font-size: 15px; */
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 0;
+    opacity: 0.80;
+}
