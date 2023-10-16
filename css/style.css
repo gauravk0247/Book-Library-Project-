@@ -7,6 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Home Page css */
 header{
     display: flex;
     align-items: center;
@@ -68,7 +69,7 @@ nav ul li a:hover{
 
 .search{
     position: relative;
-    left: 610px;
+    left: 585px;
 }
 
 .search input{
@@ -82,10 +83,10 @@ nav ul li a:hover{
 #home::before{
     content: "";
     position: absolute;
-    background: url(../background_img/home1.jpg) no-repeat center center/cover;
+    background: url(../background_img/13.jpg) no-repeat center center/cover;
     top: 0;
     left: 0;
-    height: 51vh;
+    height: 100vh;
     width: 100%;
     z-index: -1;
     opacity: 0.82;
@@ -127,7 +128,6 @@ nav ul li a:hover{
     background-color: white;
     color: red;
     border: 2px solid red;
-    /* transition: 1s step-end; */
     cursor: pointer;
 }
 
@@ -140,8 +140,12 @@ nav ul li a:hover{
     align-items: center;
 }
 
+.h-headhome{
+    font-size: 2rem;
+}
+
 #home h1{
-    color: red;
+    color: white;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 800;
@@ -150,9 +154,10 @@ nav ul li a:hover{
 #home p{
     font-size: 1.5rem;
     text-align: center;
-    color: yellow;
+    color: white;
 }
 
+/* Motivation */
 #about h1{
     text-align: center;
     color: black;
@@ -199,8 +204,9 @@ nav ul li a:hover{
 }
 
 .h-head{
-    font-size: 2.1rem;
+    font-size: 1.3rem;
     padding: 12px;
+    margin-left: 155px;
 }
 
 .center{
@@ -212,7 +218,8 @@ nav ul li a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin: 4px 30px;
+    position: relative;
 }
 
 .title p{
@@ -222,9 +229,17 @@ nav ul li a:hover{
 
 .gallary .item{
     position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 5px;
+    width: 270px;
+    height: 170px;
+    margin: 11px 15px;
+}
+
+.gallary .item1{
+    position: relative;
+    width: 173px;
+    height: 259px;
+    margin: 14px 13px;
+    margin-bottom: 25px;
 }
 
 .gallary .item img{
@@ -232,7 +247,12 @@ nav ul li a:hover{
     height: 100%;
 }
 
-.gallary .item .action{
+.gallary .item1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.gallary .item1 .action{
     position: absolute;
     top: 0;
     left: 0;
@@ -246,17 +266,34 @@ nav ul li a:hover{
     transition: 0.5s;
 }
 
-.gallary .item .action:hover{
+.gallary .item1 .action:hover{
     opacity: 1;
 
 }
 
-.gallary .item .action a{
+.gallary .item1 .action a{
     display: inline-block;
     color: #fff;
     text-decoration: none;
     border: 1px solid #fff;
     padding: 5px 15px;
+}
+
+.gallary .item .action .typebook{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,.35);
+    padding: 15px 0 16px;
+    margin-top: -28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.25;
+    color: white;
+    cursor: pointer;
 }
 
 /* Books CSS */
@@ -313,19 +350,83 @@ nav ul li a:hover{
    transition: background-color .2s;
 }
 
-.book .btn-b:hover{
-   /* background-color: white;
-   color: rgb(117, 117, 227);
-   border: 2px solid rgb(117, 117, 227);
-   cursor: pointer;
-   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-   font-size: 15px; */
+/* Sign in and sign out css
+Date - 13/10/23 */
+#sign-main{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87vh;
+    margin: 0;
 }
+
+.container {
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-left: 12px;
+    padding-right: 39px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    padding: 8px 18px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
 footer{
     text-align: center;
     background-color: black;
     color: white;
     padding: 10px 20px;
-    margin-top: 0;
+    /* margin-top: 0; */
     opacity: 0.80;
 }
