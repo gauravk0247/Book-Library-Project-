@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -88,8 +89,8 @@ nav ul li a:hover{
     left: 0;
     height: 100vh;
     width: 100%;
-    z-index: -1;
-    opacity: 0.82;
+    z-index: -3;
+    opacity: 0.73;
 }
 
 .button-btn{
@@ -145,16 +146,20 @@ nav ul li a:hover{
 }
 
 #home h1{
-    color: white;
+    font-family: 'Young Serif', serif;
+    color: red;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 800;
+    margin-top: 240px;
 }
 
 #home p{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     color: white;
+    font-weight: bold;
+    font-family: 'Young Serif', serif;
 }
 
 /* Motivation */
@@ -422,11 +427,88 @@ input[type="password"] {
     text-decoration: none;
 }
 
+
+/* Books Borrow */
+/* 17/10/23 */
+#bookpurchase{
+    margin: 0 auto;
+    max-width: 1366px;
+    min-width: 1128px;
+    padding: 0;
+}
+#bookborrow{
+    width: 100%;
+    position: relative;
+}
+#bookborrow .book_br{
+    margin: 34px;
+}
+
+#bookborrow .box {
+    display: flex;
+    flex: 1;
+    /* justify-content: center; */
+    position: relative;
+    border: 1px solid #f0f0f0;
+}
+
+#bookborrow .box img{
+    margin: auto;
+    display: flex;
+    height: 380px;
+    width: 269px;
+    padding-right:44px;
+} 
+
+#bookborrow .box #biti{
+    justify-content: center;
+}
+
+#bookborrow .box #biti #book_btn1{
+    padding: 6px 12px;
+    margin: 8px 3px;
+    width: 125px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #878787;
+    background-color: #fff;
+    font-weight: bold;
+    border: 2px solid #878787;
+    border: 2px solid #878787;
+}
+
+#bookborrow .box #biti #book_btn2{
+    padding: 6px 12px;
+    margin: 8px 3px;
+    width: 125px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #878787;
+    font-weight: bold;
+    border: 2px solid #878787;
+}
+
+#bookborrow #book_details{
+    width: 68%;
+    line-height: 1.4;
+}
+
+#bookborrow #book_details h3{
+    font-size: 1.6rem;
+}
+
+#bookborrow #book_details li{
+    line-height: 1.6;
+    font-size: 18px;
+}
+
 footer{
     text-align: center;
     background-color: black;
     color: white;
     padding: 10px 20px;
-    /* margin-top: 0; */
     opacity: 0.80;
 }
