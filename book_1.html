@@ -7,6 +7,24 @@
   <title>Library</title>
   <link rel="icon" type="image/x-icon" href="favicon/favicon.png">
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    #cart {
+      color: white;
+      position: relative;
+      left: 806px;
+      font-weight: bold;
+    }
+
+    .search {
+      position: relative;
+      left: 520px;
+    }
+
+    .button-btn {
+      position: relative;
+      left: 550px;
+    }
+  </style>
 </head>
 
 <body id="bookbody">
@@ -19,17 +37,15 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="books.html">Books</a></li>
-        <li><a href="gallary.html">Gallary</a></li>
+        <li><a href="gallary.html">Gallery</a></li>
       </ul>
 
-      <div class="search">
-        <input type="text" name="search" id="searchAny" placeholder="search" />
-      </div />
-
-      <div class="button-btn">
-        <button id="searchbtn">Search</button>
-      </div>
     </nav>
+    <div id="cart">
+      <h2>Cart</h2>
+      <ul id="cart-list" style="list-style: none;"></ul>
+      <p>Total: Rs.0.00</p>
+    </div>
   </header>
 
   <main id="bookpurchase">
@@ -38,8 +54,8 @@
         <div class="box">
           <div id="biti">
             <img src="Book Img/4_book.jpg" alt="" />
-            <input type="button" value="ADD TO CART" id="book_btn1">
-            <input type="button" value="BUY NOW" id="book_btn2">
+            <input type="button" value="ADD TO CART" id="book_btn1" onclick="addToCart('Games Of Thrones', 299.00)">
+            <input type="button" value="BUY NOW" id="book_btn2" onclick="paymentWindow()">
           </div>
           <div id="book_details">
             <h3>Games Of Throwns</h3>

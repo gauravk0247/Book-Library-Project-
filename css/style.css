@@ -57,20 +57,22 @@ nav ul li a{
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
+    font-family: Arial, sans-serif;
     font-weight: bold;
 }
 
 nav ul li a:hover{
     font-size: 1.3rem;
-    color: red;
     transition: ease-in-out;
     font-weight: bolder;
     color: black;
+    text-shadow: 2px 2px 15px red;
 }
 
 .search{
     position: relative;
     left: 585px;
+    font-family: Arial, sans-serif;
 }
 
 .search input{
@@ -79,30 +81,32 @@ nav ul li a:hover{
     border-radius: 5px;
     font-size: 1.1rem;
     width: 15vw;
+    font-family: Arial, sans-serif;
 }
 
 #home::before{
     content: "";
     position: absolute;
-    background: url(../background_img/13.jpg) no-repeat center center/cover;
+    background: url(../background_img/11.jpg) no-repeat center center/cover;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100%;
     z-index: -3;
-    opacity: 0.73;
+    
 }
 
-.button-btn{
+.button-11{
     position: relative;
     left: 610px;
 }
 
-.button-btn button{
+.button-11 button{
     padding: 5px;
     margin: 9px 0px;
     font-size: 1.1rem;
     border: none;
+    font-family: Arial, sans-serif;
    
 }
 
@@ -110,6 +114,7 @@ nav ul li a:hover{
     background-color: green;
     color: white;
     border-radius: 7px;
+    font-family: Arial, sans-serif;
 }
 
 #searchbtn:hover{
@@ -123,6 +128,7 @@ nav ul li a:hover{
     background-color: red;
     color: white;
     border-radius: 7px;
+    font-family: Arial, sans-serif;
 }
 
 #signinbtn:hover{
@@ -143,11 +149,13 @@ nav ul li a:hover{
 
 .h-headhome{
     font-size: 2rem;
+    text-align: center;
 }
 
 #home h1{
+    text-shadow: 2px 2px 15px purple;
     font-family: 'Young Serif', serif;
-    color: red;
+    color: white;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 800;
@@ -155,6 +163,7 @@ nav ul li a:hover{
 }
 
 #home p{
+    text-shadow: 2px 2px 15px red;
     font-size: 1.8rem;
     text-align: center;
     color: white;
@@ -162,11 +171,18 @@ nav ul li a:hover{
     font-family: 'Young Serif', serif;
 }
 
-/* Motivation */
+#about1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+#about1 .pa{
+    font-size: 20px;
+}
 #about h1{
     text-align: center;
     color: black;
-    margin-top: 70px;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 
@@ -208,9 +224,9 @@ nav ul li a:hover{
     color: white;
 }
 
-.h-head{
+.h-head1{
     font-size: 1.3rem;
-    padding: 12px;
+    padding: 12px; 
     margin-left: 155px;
 }
 
@@ -302,6 +318,19 @@ nav ul li a:hover{
 }
 
 /* Books CSS */
+
+#back::before {
+    content: "";
+    position: absolute;
+    background: url(../background_img/11.jpg) no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 151vh;
+    width: 100%;
+    z-index: -3;    
+    opacity:0.68 ;
+}
+
 .book{
     max-width: 75vw;
     margin:37px auto;
@@ -367,7 +396,7 @@ Date - 13/10/23 */
     margin: 0;
 }
 
-.container {
+.mycontent {
     max-width: 400px;
     background: #fff;
     padding: 20px;
@@ -381,7 +410,7 @@ h2 {
     text-align: center;
 }
 
-.form-container {
+.form-mycontent {
     display: flex;
     flex-direction: column;
 }
@@ -403,13 +432,13 @@ input[type="password"] {
     font-size: 16px;
 }
 
-.button-container {
+.button-mycontent {
     text-align: center;
 }
 
-.button-container button {
+.button-mycontent button {
     padding: 8px 18px;
-    background: #007BFF;
+    background: orangered;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -423,16 +452,13 @@ input[type="password"] {
 }
 
 .signup-link a {
-    color: #007BFF;
+    color: orangered;
     text-decoration: none;
 }
 
 
 /* Books Borrow */
 /* 17/10/23 */
-#bookbody{
-    /* background-color: antiquewhite; */
-}
 
 #bookpurchase{
     margin: 0 auto;
@@ -452,7 +478,6 @@ input[type="password"] {
 #bookborrow .box {
     display: flex;
     flex: 1;
-    /* justify-content: center; */
     position: relative;
     border: 1px solid #f0f0f0;
 }
@@ -534,10 +559,34 @@ input[type="password"] {
     list-style: none;
 }
 
+#payment-form {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    padding-right: 32px;
+    margin: 145px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #pay-now-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+
 footer{
     text-align: center;
     background-color: black;
     color: white;
     padding: 10px 20px;
     opacity: 0.80;
+    font-family: Arial, sans-serif;
 }
