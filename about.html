@@ -8,6 +8,12 @@
   <link rel="icon" type="image/x-icon" href="favicon/favicon.png">
   <link rel="stylesheet" href="css/style.css" />
   <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      color: black;
+    }
+
     #about {
       background-color: #fff;
       border-radius: 5px;
@@ -38,6 +44,38 @@
 
     li {
       margin-bottom: 10px;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 80%;
+      margin: auto;
+      font-family: 'STIX Two Text', serif;
+      padding: 10px;
+    }
+
+    .section-left {
+      flex-direction: row-reverse;
+    }
+
+    .section h1 {
+      padding: 0 10px;
+      font-size: 40px;
+      color: #a808c5;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    .paras {
+      padding: 0px 3px;
+    }
+
+    .thumbnail img {
+      width: 250px;
+      border: 2px solid black;
+      border-radius: 26px;
+      margin-top: 19px;
     }
   </style>
 </head>
@@ -97,28 +135,45 @@
       </div>
     </section>
 
-    <section id="about1">
+    <!-- <section id="about1">
       <h2>About Us</h2>
-      <p class="pa">Welcome to the Book Library! We are a haven for book enthusiasts, a place where the love of
-        literature thrives. Our mission is to provide a rich and diverse collection of books, fostering a community of
-        readers and learners.</p>
-      <p class="pa">Our library houses thousands of books, spanning various genres, from classic literature to modern
-        bestsellers. Whether you're seeking fiction, non-fiction, or scholarly works, our shelves are stocked with
-        treasures to explore.</p>
-      <h3>Our Vision</h3>
-      <p class="pa">Our vision is to inspire, educate, and empower through the written word. We believe in the
-        transformative power of books and aim to be a resource for your intellectual and creative journey.</p>
-      <h3>What We Offer</h3>
-      <ul>
-        <li>A vast collection of books, meticulously curated for your reading pleasure.</li>
-        <li>Knowledgeable and friendly staff who are passionate about books and eager to assist you.</li>
-        <li>Regular events, book clubs, and reading programs to engage with our vibrant community.</li>
-        <li>Comfortable reading areas and quiet spaces to lose yourself in the world of a good book.</li>
-        <li>Online catalog and digital resources for the tech-savvy reader.</li>
-      </ul>
-      <h3>Our Commitment</h3>
-      <p class="pa">We are committed to promoting literacy, supporting education, and spreading the joy of reading. Our
-        library is a place of inclusivity, where readers of all ages and backgrounds are welcomed.</p>
+      <img src="" alt="" srcset="">
+      
+    </section> -->
+
+    <section class="section">
+      <div class="paras">
+        <h1 class="heading">Mr. Darshan Gadakh</h1>
+        <p class="pa">Welcome to the Book Library! We are a haven for book enthusiasts, a place where the love of
+          literature thrives. Our mission is to provide a rich and diverse collection of books, fostering a community of
+          readers and learners.</p>
+        <p class="pa">Our library houses thousands of books, spanning various genres, from classic literature to modern
+          bestsellers. Whether you're seeking fiction, non-fiction, or scholarly works, our shelves are stocked with
+          treasures to explore.</p>
+        <h3>Our Vision</h3>
+        <p class="pa">Our vision is to inspire, educate, and empower through the written word. We believe in the
+          transformative power of books and aim to be a resource for your intellectual and creative journey.</p>
+      </div>
+      <div class="thumbnail">
+        <img src="1d.jpg" alt="" srcset="">
+      </div>
+    </section>
+    <section class="section section-left">
+      <div class="paras">
+        <h1 class="heading">Mr. Gaurav Khairnar</h1>
+
+        <h3>What We Offer</h3>
+        <ul>
+          <li>A vast collection of books, meticulously curated for your reading pleasure.</li>
+          <li>Knowledgeable and friendly staff who are passionate about books and eager to assist you.</li>
+          <li>Regular events, book clubs, and reading programs to engage with our vibrant community.</li>
+          <li>Comfortable reading areas and quiet spaces to lose yourself in the world of a good book.</li>
+          <li>Online catalog and digital resources for the tech-savvy reader.</li>
+        </ul>
+      </div>
+      <div class="thumbnail">
+        <img src="2g.jpg" alt="" srcset="">
+      </div>
     </section>
   </main>
   <script src="./JS/script.js"></script>
