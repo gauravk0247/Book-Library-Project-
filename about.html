@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Library</title>
   <link rel="icon" type="image/x-icon" href="favicon/favicon.png">
   <link rel="stylesheet" href="css/style.css" />
@@ -45,14 +43,13 @@
     li {
       margin-bottom: 10px;
     }
-
+   
     .section {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      width: 80%;
+      width: 90%;
       margin: auto;
-      font-family: 'STIX Two Text', serif;
       padding: 10px;
     }
 
@@ -64,18 +61,22 @@
       padding: 0 10px;
       font-size: 40px;
       color: #a808c5;
-      font-family: 'Ubuntu', sans-serif;
     }
 
     .paras {
-      padding: 0px 3px;
+      padding: 0px 23px;
+      text-align: justify;
     }
 
     .thumbnail img {
       width: 250px;
-      border: 2px solid black;
+      border: 2px solid rgb(227, 224, 224);
       border-radius: 26px;
       margin-top: 19px;
+    }
+    .thumbnail img:hover{
+      box-shadow: 2px 2px 15px red;
+      width: 253px;
     }
   </style>
 </head>
@@ -110,7 +111,7 @@
       <h1 class="h-headhome">Motivation</h1>
       <div class="about">
         <div class="box">
-          <img src="apj.webp" alt="" />
+          <img src="apj.webp" alt="apj.img" />
           <p>
             Dr. Kalam's words in "Motivation" resonate with the idea that unwavering determination, a positive mindset,
             and a strong work ethic can lead to remarkable achievements. He delves into the importance of setting
@@ -135,12 +136,6 @@
       </div>
     </section>
 
-    <!-- <section id="about1">
-      <h2>About Us</h2>
-      <img src="" alt="" srcset="">
-      
-    </section> -->
-
     <section class="section">
       <div class="paras">
         <h1 class="heading">Mr. Darshan Gadakh</h1>
@@ -155,9 +150,10 @@
           transformative power of books and aim to be a resource for your intellectual and creative journey.</p>
       </div>
       <div class="thumbnail">
-        <img src="1d.jpg" alt="" srcset="">
+        <img src="1d.jpg" alt="d.img">
       </div>
     </section>
+
     <section class="section section-left">
       <div class="paras">
         <h1 class="heading">Mr. Gaurav Khairnar</h1>
@@ -172,7 +168,7 @@
         </ul>
       </div>
       <div class="thumbnail">
-        <img src="2g.jpg" alt="" srcset="">
+        <img src="2g.jpg" alt="g.img" >
       </div>
     </section>
   </main>
